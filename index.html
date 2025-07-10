@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css"> <title>Simulador de Tienda Virtual</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+
+<body>
+
+    <h1>Simulador de Tienda Virtual</h1>
+    <p>
+        Esta "Tienda Virtual" te permite simular un proceso de compra de productos.
+        Puedes ver los productos disponibles, agregar items al carrito y ver el resumen de tu compra.
+    </p>
+
+    <div class="contenedor">
+        <div class="catalogo-productos">
+            <h2>Productos disponibles:</h2>
+            <div id="lista-productos">
+            </div>
+        </div>
+
+        <div class="seccion-compra">
+            <h2>Realizar Compra:</h2>
+            <div class="grupo-input">
+                <label for="nombre-producto">Nombre del Producto:</label>
+                <input type="text" id="nombre-producto" placeholder="Ej: Tomate">
+            </div>
+            <div class="grupo-input">
+                <label for="cantidad-producto">Cantidad:</label>
+                <input type="number" id="cantidad-producto" min="1" value="1">
+            </div>
+            <button id="boton-agregar-carrito">Agregar al Carrito</button>
+            <div id="area-mensajes" class="area-mensajes">
+            </div>
+        </div>
+
+        <div class="seccion-carrito">
+            <h2>Carrito de Compras:</h2>
+            <div id="items-carrito"></div>
+            <p class="precio-total" id="total-carrito">
+            </p>
+            <div class="grupo-botones">
+                <button id="boton-finalizar-compra">Finalizar Compra</button>
+                <button id="boton-vaciar-carrito">Vaciar Carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script> 
+</body>
+
+</html>

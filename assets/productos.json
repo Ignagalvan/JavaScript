@@ -1,0 +1,22 @@
+[
+    {
+        "nombre": "Tomate",
+        "precio": 100,
+        "cantidadStock": 10
+    },
+    {
+        "nombre": "Leche",
+        "precio": 200,
+        "cantidadStock": 5
+    },
+    {
+        "nombre": "Jugo",
+        "precio": 300,
+        "cantidadStock": 8
+    },
+    {
+        "nombre": "Pan",
+        "precio": 50,
+        "cantidadStock": 23
+    }
+]
